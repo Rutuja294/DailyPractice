@@ -29,8 +29,6 @@ class BlackThar extends Thar{
 	}
 }
 
-
-
 //Dynamic Polymorphism 
 interface payment{
 	void pay();
