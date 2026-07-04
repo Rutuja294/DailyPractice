@@ -41,8 +41,47 @@ public class StringMethods {
 		System.out.println(s10.length());
 		System.out.println(s10.isEmpty());
 		System.out.println(s10.isBlank());
+		//Character Access
+		System.out.println(s10.charAt(0));
+		char[] arr1=s10.toCharArray();
+		System.out.println(arr1);
 		
+		//Comparison
+		System.out.println(s10.equals(arr1));
+		//Lexographical Comparision
+		System.out.println(s10.compareTo(s9));
 		
+		//Extraction and Transformation
+		String str="  Rutuja";
+		System.out.println(str.toLowerCase());
+		System.out.println(str.toUpperCase());
+        System.out.println(str.trim());
+        System.out.println(str.strip()); //Unicode Friendly
+        System.out.print(str.repeat(3));
+        
+        
+        String str1="Rutuja, Anjali, Rajendra";
+        String[] arr3=str1.split(",");
+        for(String abc: arr3){
+        	System.out.println(abc);
+        }
+        
+		System.out.println(String.join("-", "a","b","c"));
+		
+		//Conversion
+		byte[] byar=str.getBytes();
+		for(byte ac:byar) {
+			System.out.print(ac+" ");
+		}
+		String name = "Rutu";
+		int age = 23;
+//format() Method
+		String result = String.format(
+		        "My name is %s and I am %d years old.",
+		        name,
+		        age);
+
+		System.out.println(result);
 	
 	}
 

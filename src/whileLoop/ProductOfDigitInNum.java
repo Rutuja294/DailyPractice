@@ -1,0 +1,20 @@
+package whileLoop;
+
+import java.util.Scanner;
+
+public class ProductOfDigitInNum {
+	//Find and print the product of all digits of a given number.
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int product=1;
+		while(num>0) {
+			int temp=num%10;
+			product*=temp;
+			num=num/10;
+			
+		}
+		System.out.println(product);
+	}
+
+}
