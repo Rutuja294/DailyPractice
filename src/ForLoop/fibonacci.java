@@ -9,10 +9,11 @@ public class fibonacci {
 		int term=sc.nextInt();
 		int a=0;
 		int b=1;
-		System.out.print(a+" "+b+" ");
-		for(int i=1;i<=term-2;i++) {
+	
+		for(int i=1;i<=term;i++) {
+			
+			System.out.print(a+" ");
 			int temp=a+b;
-			System.out.print(temp+" ");
 			a=b;
 			b=temp;
 		}

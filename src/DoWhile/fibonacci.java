@@ -8,12 +8,12 @@ public class fibonacci {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter terms: ");
 		int term=sc.nextInt();
-		int i=term-2;
 		int a=0,b=1;
-		System.out.print(a+" "+b+" ");
+		int i=term;
 		do {
+			
+			System.out.print(a+" ");
 			int c=a+b;
-			System.out.print(c+" ");
 			a=b;
 			b=c;
 			i--;
